@@ -250,3 +250,24 @@ footer{
 .product-btn:hover{
     background:#0E2A47;
 }
+/* WhatsApp Button */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25D366;
+    color:white;
+    padding:15px 25px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    z-index:1000;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:translateY(-5px);
+    background:#128C7E;
+}
