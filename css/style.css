@@ -271,3 +271,29 @@ footer{
     transform:translateY(-5px);
     background:#128C7E;
 }
+/* Search Box */
+
+#searchBox{
+
+width:80%;
+max-width:500px;
+display:block;
+margin:0 auto 40px;
+
+padding:15px 20px;
+
+border:2px solid #E66A1F;
+
+border-radius:40px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+#searchBox:focus{
+
+box-shadow:0 0 15px rgba(230,106,31,.4);
+
+}
