@@ -68,35 +68,37 @@ topBtn.onclick=()=>{
    Product Search
 ========================================== */
 
-const searchBox=document.getElementById("searchBox");
 
-if(searchBox){
+const searchBox = document.getElementById("searchBox");
 
-const cards=document.querySelectorAll(".product-card");
+if (searchBox) {
 
-searchBox.addEventListener("keyup",()=>{
+    searchBox.addEventListener("keyup", function () {
 
-const value=searchBox.value.toLowerCase();
+        let filter = searchBox.value.toLowerCase();
 
-cards.forEach(card=>{
+        let cards = document.querySelectorAll(".product-card");
 
-const text=card.innerText.toLowerCase();
+        cards.forEach(function(card){
 
-if(text.indexOf(value)>-1){
+            let text = card.innerText.toLowerCase();
 
-card.style.display="block";
+            if(text.includes(filter)){
 
-}else{
+                card.style.display="block";
 
-card.style.display="none";
+            }else{
+
+                card.style.display="none";
+
+            }
+
+        });
+
+    });
 
 }
 
-});
-
-});
-
-}
 
 /* ==========================================
    Contact Form
