@@ -295,3 +295,13 @@
 </body>
 
 </html>
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:65px;
+    width:auto;
+    border-radius:50%;
+}
