@@ -132,3 +132,242 @@ View Details
 </a>
 
 </div>
+<div class="product-card">
+
+    <img src="images/mcb.jpg" alt="MCB">
+
+    <h3>MCB</h3>
+
+    <p>
+        Premium miniature circuit breakers for electrical safety.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/fan.jpg" alt="Ceiling Fan">
+
+    <h3>Ceiling Fan</h3>
+
+    <p>
+        Energy-efficient ceiling fans with stylish modern designs.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/heater.jpg" alt="Water Heater">
+
+    <h3>Water Heater</h3>
+
+    <p>
+        Fast heating with advanced safety features.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/mixer.jpg" alt="Mixer Grinder">
+
+    <h3>Mixer Grinder</h3>
+
+    <p>
+        Powerful motor with stainless steel jars for everyday use.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/iron.jpg" alt="Electric Iron">
+
+    <h3>Electric Iron</h3>
+
+    <p>
+        Non-stick soleplate for smooth and efficient ironing.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/pvcpipe.jpg" alt="PVC Pipe">
+
+    <h3>PVC Pipes</h3>
+
+    <p>
+        Durable PVC pipes suitable for residential and commercial projects.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/ledbulb.jpg" alt="LED Bulb">
+
+    <h3>LED Bulbs</h3>
+
+    <p>
+        Bright, energy-saving LED lighting for every room.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/extensionboard.jpg" alt="Extension Board">
+
+    <h3>Extension Boards</h3>
+
+    <p>
+        Multi-socket extension boards with surge protection.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+
+<div class="product-card">
+
+    <img src="images/emergencylight.jpg" alt="Emergency Light">
+
+    <h3>Emergency Light</h3>
+
+    <p>
+        Rechargeable emergency lighting with long battery backup.
+    </p>
+
+    <a href="#" class="product-btn">
+        View Details
+    </a>
+
+</div>
+        </div>
+
+</section>
+
+<!-- Call to Action -->
+
+<section>
+
+    <h2>Need Help Choosing a Product?</h2>
+
+    <p style="text-align:center;max-width:700px;margin:auto;">
+
+        Our team is ready to help you choose the perfect electrical
+        products and home appliances for your home or business.
+
+    </p>
+
+    <div style="text-align:center;margin-top:40px;">
+
+        <a href="contact.html" class="btn">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>MIR ELECTRONICS</h3>
+
+    <p>Where Quality Meets Innovation</p>
+
+    <br>
+
+    <p>📍 Your Store Address</p>
+
+    <p>📞 +91 77808 06030</p>
+
+    <p>✉️ info@mirelectronics.com</p>
+
+    <br>
+
+    <p>© 2026 MIR Electronics. All Rights Reserved.</p>
+
+</footer>
+
+<!-- WhatsApp Button -->
+
+<a href="https://wa.me/917780806030"
+class="whatsapp"
+target="_blank">
+
+💬 Chat on WhatsApp
+
+</a>
+
+<!-- Search Script -->
+
+<script>
+
+const searchBox=document.getElementById("searchBox");
+
+const cards=document.querySelectorAll(".product-card");
+
+searchBox.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+cards.forEach(card=>{
+
+let text=card.innerText.toLowerCase();
+
+if(text.includes(value)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
