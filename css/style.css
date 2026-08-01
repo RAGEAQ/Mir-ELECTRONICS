@@ -1,300 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ==========================================
+   MIR Electronics - Main Stylesheet
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fc;
+    color:#222;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    transition:.3s;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ==========================================
+   Navigation
+========================================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#ffffff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIR Electronics | Where Quality Meets Innovation</title>
-
-    <meta name="description"
-        content="MIR Electronics - Trusted supplier of electrical products, home appliances and electronic accessories.">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-
-    <!-- Navigation -->
-
-    <nav class="navbar">
-
-        <div class="logo">
-
-            <img src="images/logo.png" alt="MIR Electronics">
-
-        </div>
-
-        <ul class="nav-links">
-
-            <li><a href="index.html" class="active">Home</a></li>
-
-            <li><a href="products.html">Products</a></li>
-
-            <li><a href="about.html">About</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- Hero -->
-
-    <header class="hero">
-
-        <div class="hero-content">
-
-            <h1>MIR ELECTRONICS</h1>
-
-            <h2>Where Quality Meets Innovation</h2>
-
-            <p>
-
-                We provide premium electrical products,
-                home appliances and electronic accessories
-                from trusted brands at affordable prices.
-
-            </p>
-
-            <a href="products.html" class="btn">
-
-                Explore Products
-
-            </a>
-
-        </div>
-
-    </header>
-
-    <!-- Categories -->
-
-    <section>
-
-        <h2>Product Categories</h2>
-
-        <div class="grid">
-
-            <div class="card">
-
-                💡
-
-                <h3>Lighting</h3>
-
-            </div>
-
-            <div class="card">
-
-                🔌
-
-                <h3>Switches & Sockets</h3>
-
-            </div>
-
-            <div class="card">
-
-                ⚡
-
-                <h3>Electrical Wires</h3>
-
-            </div>
-
-            <div class="card">
-
-                🌀
-
-                <h3>Fans</h3>
-
-            </div>
-
-            <div class="card">
-
-                🔥
-
-                <h3>Water Heaters</h3>
-
-            </div>
-
-            <div class="card">
-
-                🏠
-
-                <h3>Home Appliances</h3>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Featured Products -->
-
-    <section class="products">
-
-        <h2>Featured Products</h2>
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <img src="images/wire.jpg" alt="Electrical Wires">
-                <h3>Electrical Wires</h3>
-                <p>Premium quality copper wires for residential and commercial use.</p>
-                <a href="products.html" class="product-btn">View Details</a>
-            </div>
-
-            <div class="product-card">
-                <img src="images/switch.jpg" alt="Switches">
-                <h3>Switches & Sockets</h3>
-                <p>Elegant and durable switches designed for modern homes.</p>
-                <a href="products.html" class="product-btn">View Details</a>
-            </div>
-
-            <div class="product-card">
-                <img src="images/fan.jpg" alt="Fans">
-                <h3>Ceiling Fans</h3>
-                <p>Energy-efficient ceiling fans with stylish designs.</p>
-                <a href="products.html" class="product-btn">View Details</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Why Choose Us -->
-
-    <section>
-
-        <h2>Why Choose MIR Electronics?</h2>
-
-        <div class="features">
-
-            <div>
-                <h3>✔ Premium Quality</h3>
-                <p>We supply only trusted and branded electrical products.</p>
-            </div>
-
-            <div>
-                <h3>✔ Affordable Prices</h3>
-                <p>Competitive pricing with excellent customer satisfaction.</p>
-            </div>
-
-            <div>
-                <h3>✔ Trusted Service</h3>
-                <p>Fast response and reliable support for every customer.</p>
-            </div>
-
-            <div>
-                <h3>✔ Wide Product Range</h3>
-                <p>Everything from electrical accessories to home appliances.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Testimonials -->
-
-    <section>
-
-        <h2>What Our Customers Say</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                ⭐⭐⭐⭐⭐
-                <h3>Rahul Sharma</h3>
-                <p>"Excellent products and very professional service."</p>
-            </div>
-
-            <div class="card">
-                ⭐⭐⭐⭐⭐
-                <h3>Priya Verma</h3>
-                <p>"Best prices and genuine electrical products."</p>
-            </div>
-
-            <div class="card">
-                ⭐⭐⭐⭐⭐
-                <h3>Amit Singh</h3>
-                <p>"Highly recommended for home appliances and electrical items."</p>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Call to Action -->
-
-    <section>
-
-        <h2>Ready to Upgrade Your Home?</h2>
-
-        <p style="text-align:center;max-width:700px;margin:auto;">
-            Visit MIR Electronics for premium electrical products, home appliances,
-            and trusted customer service. We are committed to quality, innovation,
-            and customer satisfaction.
-        </p>
-
-        <div style="text-align:center;margin-top:40px;">
-
-            <a href="contact.html" class="btn">
-                Contact Us
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-
-    <footer>
-
-        <h3>MIR ELECTRONICS</h3>
-
-        <p>Where Quality Meets Innovation</p>
-
-        <br>
-
-        <p>
-            📍 Your Store Address
-        </p>
-
-        <p>
-            📞 +91 77808 06030
-        </p>
-
-        <p>
-            ✉️ info@mirelectronics.com
-        </p>
-
-        <br>
-
-        <p>
-            © 2026 MIR Electronics. All Rights Reserved.
-        </p>
-
-    </footer>
-
-    <!-- WhatsApp Button -->
-
-    <a href="https://wa.me/917780806030"
-       class="whatsapp"
-       target="_blank">
-
-        💬 Chat on WhatsApp
-
-    </a>
-
-    <!-- JavaScript -->
-
-    <script src="js/script.js"></script>
-
-</body>
-
-</html>
 .logo{
     display:flex;
     align-items:center;
@@ -305,3 +59,680 @@
     width:auto;
     border-radius:50%;
 }
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links li{
+    display:inline-block;
+}
+
+.nav-links a{
+    color:#0E2A47;
+    font-weight:600;
+    padding:8px 0;
+    position:relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#E66A1F;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#E66A1F;
+    transition:.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+
+/* ==========================================
+   Hero Section
+========================================== */
+
+.hero{
+    background:linear-gradient(135deg,#0E2A47,#173d66);
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.hero h2{
+    margin:20px 0;
+    color:#E66A1F;
+    font-size:28px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    opacity:.95;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#E66A1F;
+    color:#fff;
+    padding:15px 40px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#fff;
+    color:#0E2A47;
+    transform:translateY(-4px);
+}
+/* ==========================================
+   Sections
+========================================== */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#0E2A47;
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+/* ==========================================
+   Category Grid
+========================================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:40px 20px;
+    border-radius:20px;
+    text-align:center;
+    font-size:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card h3{
+    margin-top:20px;
+    font-size:22px;
+    color:#0E2A47;
+}
+
+.card p{
+    margin-top:10px;
+    color:#666;
+    font-size:15px;
+}
+
+/* ==========================================
+   Products Section
+========================================== */
+
+.products{
+    background:#fff;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.product-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    padding:20px 20px 10px;
+    color:#0E2A47;
+    font-size:22px;
+}
+
+.product-card p{
+    padding:0 20px 20px;
+    color:#666;
+    font-size:15px;
+}
+
+.product-btn{
+    display:inline-block;
+    margin:0 20px 25px;
+    padding:12px 25px;
+    background:#E66A1F;
+    color:#fff;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.product-btn:hover{
+    background:#0E2A47;
+}
+
+/* ==========================================
+   Search Box
+========================================== */
+
+#searchBox{
+    width:80%;
+    max-width:500px;
+    display:block;
+    margin:0 auto 40px;
+    padding:15px 20px;
+    border:2px solid #E66A1F;
+    border-radius:40px;
+    outline:none;
+    font-size:16px;
+}
+
+#searchBox:focus{
+    box-shadow:0 0 15px rgba(230,106,31,.35);
+}
+/* ==========================================
+   About Page
+========================================== */
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    margin-bottom:20px;
+    color:#555;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.about-box{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.about-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.about-box h3{
+    color:#0E2A47;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.about-box p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ==========================================
+   Why Choose Us
+========================================== */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.features div{
+    background:#fff;
+    border-left:6px solid #E66A1F;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.features div:hover{
+    transform:translateY(-8px);
+}
+
+.features h3{
+    color:#0E2A47;
+    margin-bottom:10px;
+}
+
+.features p{
+    color:#666;
+}
+
+/* ==========================================
+   Contact Page
+========================================== */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+    align-items:start;
+}
+
+.contact-info{
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact-info h3{
+    color:#0E2A47;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:18px;
+    color:#555;
+    line-height:1.7;
+}
+
+.contact-form{
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact-form textarea{
+    min-height:160px;
+    resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#E66A1F;
+}
+
+.contact-form button{
+    background:#E66A1F;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#0E2A47;
+}
+
+/* ==========================================
+   Google Map
+========================================== */
+
+iframe{
+    width:100%;
+    border:0;
+    border-radius:15px;
+}
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+    background:#0E2A47;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+    opacity:.9;
+}
+
+/* ==========================================
+   WhatsApp Button
+========================================== */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25D366;
+    color:#fff;
+    padding:15px 24px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    z-index:1000;
+}
+
+.whatsapp:hover{
+    background:#128C7E;
+    transform:translateY(-5px);
+}
+
+/* ==========================================
+   Utility Classes
+========================================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.mt-40{
+    margin-top:40px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.mb-40{
+    margin-bottom:40px;
+}
+
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+section{
+    padding:60px 6%;
+}
+
+.product-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    padding:20px;
+}
+
+.logo{
+    margin-bottom:15px;
+}
+
+.logo img{
+    height:55px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero{
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+section h2{
+    font-size:30px;
+}
+
+.grid,
+.product-grid,
+.about-grid,
+.features,
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.product-card img{
+    height:220px;
+}
+
+.whatsapp{
+    right:15px;
+    bottom:15px;
+    padding:12px 18px;
+    font-size:14px;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero h2{
+    font-size:18px;
+}
+
+.btn,
+.product-btn{
+    width:100%;
+    text-align:center;
+}
+
+#searchBox{
+    width:100%;
+}
+
+footer h3{
+    font-size:22px;
+}
+
+}
+/* ==========================================
+   Scroll To Top Button
+========================================== */
+
+#topBtn{
+    position:fixed;
+    bottom:90px;
+    right:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#0E2A47;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+#topBtn:hover{
+    background:#E66A1F;
+    transform:translateY(-5px);
+}
+
+/* ==========================================
+   Animations
+========================================== */
+
+.card,
+.product-card,
+.about-box,
+.features div,
+.contact-info,
+.contact-form{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================================
+   Selection
+========================================== */
+
+::selection{
+    background:#E66A1F;
+    color:#fff;
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0E2A47;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#E66A1F;
+}
+
+/* ==========================================
+   Smooth Image Hover
+========================================== */
+
+.product-card img{
+    transition:.4s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   Inputs
+========================================== */
+
+input,
+textarea,
+button{
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================================
+   End of File
+========================================== */
