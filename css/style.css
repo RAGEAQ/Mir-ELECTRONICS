@@ -571,11 +571,23 @@ section{
 }
 
 .logo{
-    margin-bottom:15px;
+    flex-direction:row;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:18px;
 }
 
 .logo img{
+    width:55px;
     height:55px;
+}
+
+.logo-text h2{
+    font-size:22px;
+}
+
+.logo-text span{
+    font-size:12px;
 }
 
 .nav-links{
