@@ -181,15 +181,6 @@ if (menuToggle && navLinks) {
    Preloader
 ========================================== */
 
-window.addEventListener("load", function(){
-
-    const preloader = document.getElementById("preloader");
-
-    preloader.style.opacity = "0";
-    preloader.style.visibility = "hidden";
-
-});
-
 /* ==========================================
    Image Lightbox
 ========================================== */
@@ -198,30 +189,34 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeLightbox = document.getElementById("close-lightbox");
 
-document.querySelectorAll(".featured-card img, .product-card img").forEach(img => {
+if (lightbox && lightboxImg && closeLightbox) {
 
-    img.addEventListener("click", function(){
+    document.querySelectorAll(".featured-card img, .product-card img").forEach(img => {
 
-        lightbox.style.display = "flex";
-        lightboxImg.src = this.src;
-        lightboxImg.alt = this.alt;
+        img.addEventListener("click", function () {
+
+            lightbox.style.display = "flex";
+            lightboxImg.src = this.src;
+            lightboxImg.alt = this.alt;
+
+        });
 
     });
 
-});
-
-closeLightbox.addEventListener("click", function(){
-
-    lightbox.style.display = "none";
-
-});
-
-lightbox.addEventListener("click", function(e){
-
-    if(e.target === lightbox){
+    closeLightbox.addEventListener("click", function () {
 
         lightbox.style.display = "none";
 
-    }
+    });
 
-});
+    lightbox.addEventListener("click", function (e) {
+
+        if (e.target === lightbox) {
+
+            lightbox.style.display = "none";
+
+        }
+
+    });
+
+}
