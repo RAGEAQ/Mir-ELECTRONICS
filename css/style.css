@@ -543,12 +543,7 @@ footer p{
 .mb-40{
     margin-bottom:40px;
 }
-.menu-toggle{
-    display:none;
-    font-size:30px;
-    cursor:pointer;
-    color:#0B2545;
-}
+
 /* ==========================================
    Responsive Design
 ========================================== */
