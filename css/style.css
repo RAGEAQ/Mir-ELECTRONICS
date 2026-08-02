@@ -1583,3 +1583,1421 @@ footer{
 /* ==========================================
    End of MIR Electronics Stylesheet
 ========================================== */
+/* ==========================================
+   Search Bar
+========================================== */
+
+.search-section{
+
+    background:#fff;
+
+    padding:40px 8%;
+
+    text-align:center;
+
+}
+
+.search-box{
+
+    max-width:600px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+#searchBox{
+
+    flex:1;
+
+    padding:16px 20px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.search-btn{
+
+    background:#F97316;
+
+    color:#fff;
+
+    border:none;
+
+    padding:16px 28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-btn:hover{
+
+    background:#0B2545;
+
+}
+
+/* ==========================================
+   Back To Top Button
+========================================== */
+
+#backToTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:100px;
+
+    width:55px;
+
+    height:55px;
+
+    background:#F97316;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#backToTop:hover{
+
+    background:#0B2545;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   Product Hover Overlay
+========================================== */
+
+.featured-card{
+
+    position:relative;
+
+}
+
+.product-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(11,37,69,.75);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.featured-card:hover .product-overlay{
+
+    opacity:1;
+
+}
+
+.product-overlay a{
+
+    background:#F97316;
+
+    color:#fff;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.product-overlay a:hover{
+
+    background:#fff;
+
+    color:#0B2545;
+
+}
+/* ==========================================
+   Testimonials
+========================================== */
+
+.testimonials{
+
+    background:#f8fafc;
+
+    text-align:center;
+
+}
+
+.testimonial-subtitle{
+
+    color:#666;
+
+    margin-bottom:50px;
+
+}
+
+.testimonial-slider{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.testimonial-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.testimonial-card img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    margin:0 auto 20px;
+
+    object-fit:cover;
+
+    border:4px solid #F97316;
+
+}
+
+.testimonial-card h3{
+
+    color:#0B2545;
+
+    margin-bottom:10px;
+
+}
+
+.testimonial-card span{
+
+    color:#F97316;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.testimonial-card p{
+
+    color:#666;
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+/* ==========================================
+   Brand Logos
+========================================== */
+
+.brands{
+
+    background:#fff;
+
+    overflow:hidden;
+
+    padding:60px 8%;
+
+}
+
+.brand-title{
+
+    text-align:center;
+
+    color:#0B2545;
+
+    margin-bottom:40px;
+
+}
+
+.brand-slider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+    animation:brandScroll 20s linear infinite;
+
+}
+
+.brand-slider img{
+
+    height:70px;
+
+    width:auto;
+
+    opacity:.7;
+
+    transition:.3s;
+
+    filter:grayscale(100%);
+
+}
+
+.brand-slider img:hover{
+
+    opacity:1;
+
+    filter:grayscale(0);
+
+    transform:scale(1.08);
+
+}
+
+@keyframes brandScroll{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    100%{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+/* ==========================================
+   FAQ SECTION
+========================================== */
+
+.faq-section{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.faq-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.faq-title h2{
+    font-size:38px;
+    color:#111;
+    margin-bottom:12px;
+}
+
+.faq-title p{
+    color:#666;
+    font-size:16px;
+}
+
+
+/* FAQ BOX */
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+
+.faq-item{
+    background:#f8f9fc;
+    margin-bottom:15px;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s ease;
+    border:1px solid #eee;
+}
+
+
+.faq-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+.faq-question{
+    padding:20px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+}
+
+
+.faq-question span{
+    color:#0066ff;
+    font-size:24px;
+}
+
+
+.faq-answer{
+    padding:0 25px 20px;
+    color:#666;
+    line-height:1.7;
+    font-size:15px;
+}
+
+
+
+/* ==========================================
+   NEWSLETTER SECTION
+========================================== */
+
+
+.newsletter{
+    padding:70px 8%;
+    background:linear-gradient(135deg,#0066ff,#00c6ff);
+    text-align:center;
+    color:white;
+}
+
+
+.newsletter h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+
+.newsletter p{
+    font-size:16px;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+
+.newsletter-box{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    background:white;
+    padding:8px;
+    border-radius:50px;
+}
+
+
+.newsletter-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:15px 25px;
+    font-size:15px;
+    border-radius:50px;
+}
+
+
+.newsletter-box button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s ease;
+}
+
+
+.newsletter-box button:hover{
+    background:#333;
+    transform:scale(1.05);
+}
+
+
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+
+/* Fade In */
+
+.fade-in{
+    animation:fadeIn 1s ease forwards;
+}
+
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* Slide Left */
+
+.slide-left{
+
+    animation:slideLeft 1s ease forwards;
+
+}
+
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+
+/* Slide Right */
+
+.slide-right{
+
+    animation:slideRight 1s ease forwards;
+
+}
+
+
+@keyframes slideRight{
+
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+
+/* Zoom Animation */
+
+.zoom{
+
+    animation:zoom 0.8s ease;
+
+}
+
+
+@keyframes zoom{
+
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+
+
+/* Floating Effect */
+
+.float{
+
+    animation:floating 3s infinite ease-in-out;
+
+}
+
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* ==========================================
+   SCROLL REVEAL SUPPORT
+========================================== */
+
+
+.reveal{
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+
+}
+
+
+.reveal.active{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+/* ==========================================
+   FOOTER SECTION
+========================================== */
+
+
+.footer{
+
+    background:#111;
+    color:white;
+    padding:70px 8% 25px;
+
+}
+
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+
+}
+
+
+.footer-box h3{
+
+    font-size:22px;
+    margin-bottom:20px;
+
+}
+
+
+.footer-box p{
+
+    color:#aaa;
+    line-height:1.8;
+    font-size:15px;
+
+}
+
+
+.footer-box ul{
+
+    list-style:none;
+
+}
+
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+
+.footer-box ul li a{
+
+    color:#aaa;
+    text-decoration:none;
+    transition:0.3s ease;
+
+}
+
+
+.footer-box ul li a:hover{
+
+    color:white;
+    padding-left:5px;
+
+}
+
+
+
+/* FOOTER SOCIAL ICONS */
+
+.social-links{
+
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+
+}
+
+
+.social-links a{
+
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#222;
+    color:white;
+    border-radius:50%;
+    font-size:18px;
+    transition:0.3s ease;
+
+}
+
+
+.social-links a:hover{
+
+    background:#0066ff;
+    transform:translateY(-5px);
+
+}
+
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom{
+
+    margin-top:45px;
+    padding-top:20px;
+    border-top:1px solid #333;
+    text-align:center;
+    color:#888;
+    font-size:14px;
+
+}
+
+
+
+/* ==========================================
+   BACK TO TOP BUTTON
+========================================== */
+
+
+.top-btn{
+
+    position:fixed;
+    right:25px;
+    bottom:25px;
+
+    width:45px;
+    height:45px;
+
+    background:#0066ff;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:0.3s ease;
+
+    z-index:999;
+
+}
+
+
+.top-btn:hover{
+
+    background:#111;
+    transform:translateY(-5px);
+
+}
+
+
+
+/* ==========================================
+   FINAL RESPONSIVE CSS
+========================================== */
+
+
+
+@media(max-width:1100px){
+
+
+    .footer-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:45px;
+
+    }
+
+
+    .products-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+/* HEADER */
+
+.navbar{
+
+    padding:15px 5%;
+
+}
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+/* HERO */
+
+.hero{
+
+    padding:80px 5%;
+
+}
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+
+
+/* SECTIONS */
+
+.section-title h2,
+.faq-title h2,
+.newsletter h2{
+
+    font-size:30px;
+
+}
+
+
+
+/* PRODUCTS */
+
+.products-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+/* SERVICES */
+
+.services-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+/* ABOUT */
+
+.about-container{
+
+    flex-direction:column;
+
+}
+
+
+
+/* FAQ */
+
+.faq-question{
+
+    font-size:16px;
+
+}
+
+
+
+/* NEWSLETTER */
+
+.newsletter-box{
+
+    flex-direction:column;
+    background:transparent;
+    gap:15px;
+
+}
+
+
+.newsletter-box input{
+
+    width:100%;
+
+}
+
+
+.newsletter-box button{
+
+    width:100%;
+
+}
+
+
+
+/* FOOTER */
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.footer{
+
+    padding:50px 5% 20px;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+
+.btn{
+
+    width:100%;
+    text-align:center;
+
+}
+
+
+.faq-section,
+.newsletter,
+.footer{
+
+    padding-left:5%;
+    padding-right:5%;
+
+}
+
+
+.social-links{
+
+    justify-content:center;
+
+}
+
+
+}
+/* ==========================================
+   FINAL CLEANUP & GLOBAL EFFECTS
+========================================== */
+
+
+/* REMOVE DEFAULT IMAGE GAPS */
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+
+
+/* SMOOTH TRANSITIONS */
+
+a,
+button,
+.card,
+.product-card,
+.service-card{
+
+    transition:all 0.3s ease;
+
+}
+
+
+
+/* ==========================================
+   BUTTON ENHANCEMENTS
+========================================== */
+
+
+.btn{
+
+    display:inline-block;
+    padding:14px 32px;
+    background:#0066ff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+
+}
+
+
+.btn::before{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+
+    width:0%;
+    height:100%;
+
+    background:#111;
+
+    transition:0.4s ease;
+
+    z-index:-1;
+
+}
+
+
+.btn:hover::before{
+
+    width:100%;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* ==========================================
+   CARD HOVER EFFECTS
+========================================== */
+
+
+.product-card,
+.service-card,
+.category-card{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.product-card::after,
+.service-card::after,
+.category-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:-100%;
+
+    background:rgba(0,102,255,0.08);
+
+    transition:0.5s ease;
+
+}
+
+
+.product-card:hover::after,
+.service-card:hover::after,
+.category-card:hover::after{
+
+    left:0;
+
+}
+
+
+
+.product-card:hover,
+.service-card:hover,
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+
+/* ==========================================
+   IMAGE ZOOM EFFECT
+========================================== */
+
+
+.product-card img,
+.category-card img{
+
+    transition:0.5s ease;
+
+}
+
+
+.product-card:hover img,
+.category-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+
+/* ==========================================
+   LOADING ANIMATION
+========================================== */
+
+
+.loading{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    border:5px solid #ddd;
+    border-top-color:#0066ff;
+
+    animation:rotate 1s linear infinite;
+
+}
+
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+
+
+/* ==========================================
+   TEXT ANIMATION
+========================================== */
+
+
+.text-gradient{
+
+    background:linear-gradient(
+        90deg,
+        #0066ff,
+        #00c6ff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+
+
+/* ==========================================
+   PRODUCT BADGES
+========================================== */
+
+
+.badge{
+
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    background:#ff3b30;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+
+.badge.sale{
+
+    background:#ff9500;
+
+}
+
+
+
+.badge.new{
+
+    background:#34c759;
+
+}
+
+
+
+
+
+/* ==========================================
+   PRICE STYLE
+========================================== */
+
+
+.price{
+
+    color:#0066ff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+.old-price{
+
+    color:#999;
+
+    text-decoration:line-through;
+
+    font-size:14px;
+
+    margin-left:8px;
+
+}
+
+
+
+
+
+/* ==========================================
+   CUSTOM SCROLLBAR
+========================================== */
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#0066ff;
+
+    border-radius:10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#111;
+
+}
+
+
+
+
+
+/* ==========================================
+   SELECTION COLOR
+========================================== */
+
+
+::selection{
+
+    background:#0066ff;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================================
+   MOBILE TOUCH IMPROVEMENTS
+========================================== */
+
+
+@media(max-width:768px){
+
+
+    button,
+    .btn,
+    a{
+
+        -webkit-tap-highlight-color:transparent;
+
+    }
+
+
+    .product-card:hover,
+    .service-card:hover,
+    .category-card:hover{
+
+        transform:none;
+
+    }
+
+
+}
