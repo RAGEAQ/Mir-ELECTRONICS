@@ -788,8 +788,6 @@ section{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 }
 
-}
-
 @media(max-width:768px){
 
 .menu-toggle{
