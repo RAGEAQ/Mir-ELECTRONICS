@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" type="image/png" href="images/favicon.png">
    <title>MIR Electronics | Electrical & Home Appliances in Ganderbal</title>
-<meta name="description" content="MIR Electronics is your trusted electrical and electronics store in Wahidpora, Ganderbal, Kashmir. We offer quality electrical products, home appliances, lighting, fans, switches, and accessories at competitive prices.">
+<meta name="description" content="MIR Electronics is your trusted electrical and electronics store in Wahidpora, Ganderbal, Kashmir. We offer quality electrical products, home appliances, lighting,[...]">
     <meta name="keywords" content="MIR Electronics, Electrical Shop, Electronics Store, Ganderbal, Kashmir, Electrical Products, Home Appliances, LED Lights, Wires, Switches">
 
 <meta name="author" content="MIR Electronics">
@@ -16,6 +16,7 @@
 <meta name="theme-color" content="#0E2A47">
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,10 +49,10 @@
     </div>
 
 </a>
-<div class="menu-toggle" id="menu-toggle">
+<button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
     ☰
-</div>
-    <ul class="nav-links">
+</button>
+    <ul class="nav-links" id="primary-navigation">
 
         <li><a href="index.html" class="active">Home</a></li>
 
@@ -197,6 +198,11 @@
 
             <h3>Electrical Wires</h3>
 
+            <div class="price-row">
+              <div class="price">₹1,299 <span class="old">₹1,799</span></div>
+              <div class="rating">⭐⭐⭐⭐☆</div>
+            </div>
+
             <p>Premium quality copper wires for homes and commercial buildings.</p>
 
             <a href="products.html" class="product-btn">
@@ -213,6 +219,11 @@
 
             <h3>Switches & Sockets</h3>
 
+            <div class="price-row">
+              <div class="price">₹899 <span class="old">₹1,099</span></div>
+              <div class="rating">⭐⭐⭐⭐☆</div>
+            </div>
+
             <p>Elegant modular switches with superior safety and durability.</p>
 
             <a href="products.html" class="product-btn">
@@ -228,6 +239,11 @@
             <img src="images/fan.jpg" alt="Ceiling Fans">
 
             <h3>Ceiling Fans</h3>
+
+            <div class="price-row">
+              <div class="price">₹2,499 <span class="old">₹2,999</span></div>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
 
             <p>Energy-efficient ceiling fans designed for modern homes.</p>
 
@@ -375,9 +391,9 @@
      Image Lightbox
 ========================== -->
 
-<div id="lightbox">
+<div id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
 
-    <span id="close-lightbox">&times;</span>
+    <button id="close-lightbox" aria-label="Close image" title="Close">&times;</button>
 
     <img id="lightbox-img" src="" alt="Product Image">
 
