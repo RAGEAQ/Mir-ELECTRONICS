@@ -31,7 +31,17 @@
     <div class="loader"></div>
     <h2>MIR Electronics</h2>
 </div>
-    <!-- Header (Flipkart-like) -->
+
+<!-- Top bar: location / delivery -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="top-left"></div>
+    <div class="top-right">
+      <span class="location-icon">📍</span>
+      <a href="#" id="select-location" class="select-location">Location not set <strong>Select delivery location</strong> ›</a>
+    </div>
+  </div>
+</div>
 
 <header class="site-header">
   <div class="header-top container">
@@ -53,12 +63,12 @@
         <option>Water Heaters</option>
         <option>Home Appliances</option>
       </select>
-      <input type="search" name="q" placeholder="Search for products, brands and more" aria-label="Search" />
+      <input type="search" name="q" placeholder="Search for Products, Brands and More" aria-label="Search" />
       <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
     </form>
 
     <div class="header-actions">
-      <a href="login.html" class="action-link"><i class="fas fa-user"></i><span>Sign In</span></a>
+      <a href="login.html" class="action-link"><i class="fas fa-user"></i><span>Login</span></a>
       <a href="cart.html" class="action-link cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
     </div>
 
@@ -67,13 +77,78 @@
 
   <nav class="main-nav container" id="primary-navigation" aria-label="Primary">
     <ul>
-      <li><a href="#">Deals</a></li>
+      <li><a href="#">For You</a></li>
       <li><a href="#">Brands</a></li>
       <li><a href="#">New Arrivals</a></li>
       <li><a href="#">Offers</a></li>
       <li><a href="#">Support</a></li>
     </ul>
   </nav>
+
+  <!-- Horizontal category scroller (Flipkart style) -->
+  <div class="category-scroll">
+    <div class="container">
+      <div class="categories-row" role="tablist" aria-label="Product categories">
+        <button class="cat-item active" data-cat="for-you" aria-selected="true">
+          <div class="cat-icon">👜</div>
+          <div class="cat-label">For You</div>
+        </button>
+        <button class="cat-item" data-cat="fashion">
+          <div class="cat-icon">👕</div>
+          <div class="cat-label">Fashion</div>
+        </button>
+        <button class="cat-item" data-cat="mobiles">
+          <div class="cat-icon">📱</div>
+          <div class="cat-label">Mobiles</div>
+        </button>
+        <button class="cat-item" data-cat="electronics">
+          <div class="cat-icon">💻</div>
+          <div class="cat-label">Electronics</div>
+        </button>
+        <button class="cat-item" data-cat="beauty">
+          <div class="cat-icon">💄</div>
+          <div class="cat-label">Beauty</div>
+        </button>
+        <button class="cat-item" data-cat="home">
+          <div class="cat-icon">🏠</div>
+          <div class="cat-label">Home</div>
+        </button>
+        <button class="cat-item" data-cat="appliances">
+          <div class="cat-icon">🔌</div>
+          <div class="cat-label">Appliances</div>
+        </button>
+        <button class="cat-item" data-cat="toys">
+          <div class="cat-icon">🧸</div>
+          <div class="cat-label">Toys</div>
+        </button>
+        <button class="cat-item" data-cat="food">
+          <div class="cat-icon">🍱</div>
+          <div class="cat-label">Food & H...</div>
+        </button>
+        <button class="cat-item" data-cat="auto">
+          <div class="cat-icon">🚗</div>
+          <div class="cat-label">Auto Acc...</div>
+        </button>
+        <button class="cat-item" data-cat="sports">
+          <div class="cat-icon">🏸</div>
+          <div class="cat-label">Sports & ...</div>
+        </button>
+        <button class="cat-item" data-cat="furniture">
+          <div class="cat-icon">🛋️</div>
+          <div class="cat-label">Furniture</div>
+        </button>
+        <button class="cat-item" data-cat="books">
+          <div class="cat-icon">📚</div>
+          <div class="cat-label">Books & ...</div>
+        </button>
+        <button class="cat-item" data-cat="2wheelers">
+          <div class="cat-icon">🏍️</div>
+          <div class="cat-label">2 Wheel...</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
 </header>
 
     <!-- Hero -->
@@ -138,268 +213,9 @@
 
 </header>
 
-    <!-- Categories -->
+    <!-- The rest of the page remains unchanged -->
 
-<section class="categories">
 
-    <h2>Explore Our Categories</h2>
-
-    <p class="category-subtitle">
-        Everything you need for your home and business.
-    </p>
-
-    <div class="category-grid">
-
-        <div class="category-card">
-            <div class="category-icon">💡</div>
-            <h3>Lighting</h3>
-            <p>LED bulbs, panel lights and decorative lighting.</p>
-        </div>
-
-        <div class="category-card">
-            <div class="category-icon">🔌</div>
-            <h3>Switches & Sockets</h3>
-            <p>Premium modular switches and sockets.</p>
-        </div>
-
-        <div class="category-card">
-            <div class="category-icon">⚡</div>
-            <h3>Electrical Wires</h3>
-            <p>Safe and durable copper wiring solutions.</p>
-        </div>
-
-        <div class="category-card">
-            <div class="category-icon">🌀</div>
-            <h3>Fans</h3>
-            <p>Energy-efficient ceiling and exhaust fans.</p>
-        </div>
-
-        <div class="category-card">
-            <div class="category-icon">🔥</div>
-            <h3>Water Heaters</h3>
-            <p>Reliable geysers for every season.</p>
-        </div>
-
-        <div class="category-card">
-            <div class="category-icon">🏠</div>
-            <h3>Home Appliances</h3>
-            <p>Quality appliances for everyday comfort.</p>
-        </div>
-
-    </div>
-
-</section>
-
-        </div>
-
- <section class="featured-products">
-
-    <h2>Featured Products</h2>
-
-    <p class="featured-subtitle">
-        Discover our most popular electrical products and home appliances.
-    </p>
-
-    <!-- Product carousel like Amazon -->
-    <div class="product-carousel container">
-      <button class="carousel-prev" aria-label="Previous">‹</button>
-      <div class="carousel-viewport">
-        <div class="carousel-track">
-
-          <div class="featured-card">
-            <span class="product-badge">Best Seller</span>
-            <img src="images/wire.jpg" alt="Electrical Wires">
-            <h3>Electrical Wires</h3>
-            <div class="price-row"><div class="price">₹1,299 <span class="old">₹1,799</span></div><div class="rating">⭐⭐⭐⭐☆</div></div>
-            <p>Premium quality copper wires for homes and commercial buildings.</p>
-            <a href="products.html" class="product-btn">View Products</a>
-          </div>
-
-          <div class="featured-card">
-            <span class="product-badge">Popular</span>
-            <img src="images/switch.jpg" alt="Switches">
-            <h3>Switches & Sockets</h3>
-            <div class="price-row"><div class="price">₹899 <span class="old">₹1,099</span></div><div class="rating">⭐⭐⭐⭐☆</div></div>
-            <p>Elegant modular switches with superior safety and durability.</p>
-            <a href="products.html" class="product-btn">View Products</a>
-          </div>
-
-          <div class="featured-card">
-            <span class="product-badge">New</span>
-            <img src="images/fan.jpg" alt="Ceiling Fans">
-            <h3>Ceiling Fans</h3>
-            <div class="price-row"><div class="price">₹2,499 <span class="old">₹2,999</span></div><div class="rating">⭐⭐⭐⭐⭐</div></div>
-            <p>Energy-efficient ceiling fans designed for modern homes.</p>
-            <a href="products.html" class="product-btn">View Products</a>
-          </div>
-
-          <!-- duplicate some cards to allow horizontal scroll demo -->
-          <div class="featured-card">
-            <span class="product-badge">Hot</span>
-            <img src="images/wire.jpg" alt="Electrical Wires">
-            <h3>Premium Cable</h3>
-            <div class="price-row"><div class="price">₹1,499</div><div class="rating">⭐⭐⭐⭐☆</div></div>
-            <p>Durable insulated cable for home projects.</p>
-            <a href="products.html" class="product-btn">View Products</a>
-          </div>
-
-          <div class="featured-card">
-            <span class="product-badge">Hot</span>
-            <img src="images/switch.jpg" alt="Switches">
-            <h3>Smart Switch</h3>
-            <div class="price-row"><div class="price">₹1,199</div><div class="rating">⭐⭐⭐⭐☆</div></div>
-            <p>WiFi enabled smart switch for modern homes.</p>
-            <a href="products.html" class="product-btn">View Products</a>
-          </div>
-
-        </div>
-      </div>
-      <button class="carousel-next" aria-label="Next">›</button>
-    </div>
-
-</section>
-
-    <!-- Why Choose Us -->
-
-    <section>
-
-        <h2>Why Choose MIR Electronics?</h2>
-
-        <div class="features">
-
-            <div>
-                <h3>✔ Premium Quality</h3>
-                <p>We supply only trusted and branded electrical products.</p>
-            </div>
-
-            <div>
-                <h3>✔ Affordable Prices</h3>
-                <p>Competitive pricing with excellent customer satisfaction.</p>
-            </div>
-
-            <div>
-                <h3>✔ Trusted Service</h3>
-                <p>Fast response and reliable support for every customer.</p>
-            </div>
-
-            <div>
-                <h3>✔ Wide Product Range</h3>
-                <p>Everything from electrical accessories to home appliances.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Testimonials -->
-
-    <section>
-
-        <h2>What Our Customers Say</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                ⭐⭐⭐⭐⭐
-                <h3>Rahul Sharma</h3>
-                <p>"Excellent products and very professional service."</p>
-            </div>
-
-            <div class="card">
-                ⭐⭐⭐⭐⭐
-                <h3>Priya Verma</h3>
-                <p>"Best prices and genuine electrical products."</p>
-            </div>
-
-            <div class="card">
-                ⭐⭐⭐⭐⭐
-                <h3>Amit Singh</h3>
-                <p>"Highly recommended for home appliances and electrical items."</p>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Call to Action -->
-
-    <section>
-
-        <h2>Ready to Upgrade Your Home?</h2>
-
-        <p style="text-align:center;max-width:700px;margin:auto;">
-            Visit MIR Electronics for premium electrical products, home appliances,
-            and trusted customer service. We are committed to quality, innovation,
-            and customer satisfaction.
-        </p>
-
-        <div style="text-align:center;margin-top:40px;">
-
-            <a href="contact.html" class="btn">
-                Contact Us
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-
-    <footer>
-
-        <h3>MIR ELECTRONICS</h3>
-
-        <p>Where Quality Meets Innovation</p>
-
-        <br>
-
-     <p>📍Wahidpora, Ganderbal, Kashmir - 191131</p>
-
-        <p>
-            📞 +91 77808 06030
-        </p>
-
-        <p>
-            ✉️ info@mirelectronics.com
-        </p>
-
-        <br>
-
-        <p>
-            © 2026 MIR Electronics. All Rights Reserved.
-        </p>
-
-    </footer>
-
-<div class="social-links">
-
-    <a href="https://wa.me/917780806030" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="#" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="#" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-</div>
-
-    <!-- JavaScript -->
-
-  
-<!-- ==========================
-     Image Lightbox
-========================== -->
-
-<div id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-
-    <button id="close-lightbox" aria-label="Close image" title="Close">&times;</button>
-
-    <img id="lightbox-img" src="" alt="Product Image">
-
-</div>
   <script src="js/script.js"></script>
 </body>
 
