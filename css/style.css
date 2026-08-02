@@ -1061,3 +1061,35 @@ button{
         transform:rotate(360deg);
     }
 }
+/* ==========================================
+   Image Lightbox
+========================================== */
+
+#lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+#lightbox img{
+    max-width:90%;
+    max-height:85%;
+    border-radius:12px;
+    box-shadow:0 0 40px rgba(255,255,255,.2);
+}
+
+#close-lightbox{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+}
