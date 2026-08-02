@@ -787,7 +787,7 @@ section{
 .category-grid{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 }
-
+}
 @media(max-width:768px){
 
 .menu-toggle{
@@ -1060,3 +1060,10 @@ footer h3{
     }
 
 }
+Responsive Design
+↓
+Preloader
+↓
+Image Lightbox
+↓
+Dark Mode
