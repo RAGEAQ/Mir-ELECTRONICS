@@ -538,7 +538,12 @@ footer p{
 .mb-40{
     margin-bottom:40px;
 }
-
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#0B2545;
+}
 /* ==========================================
    Responsive Design
 ========================================== */
@@ -565,35 +570,28 @@ section{
 
 @media(max-width:768px){
 
+.menu-toggle{
+    display:block;
+}
+
 .navbar{
-    flex-direction:column;
-    padding:20px;
+    position:relative;
 }
 
-.logo{
-    flex-direction:row;
-    justify-content:center;
-    gap:12px;
-    margin-bottom:18px;
+nav{
+    display:none;
+    width:100%;
 }
 
-.logo img{
-    width:55px;
-    height:55px;
-}
-
-.logo-text h2{
-    font-size:22px;
-}
-
-.logo-text span{
-    font-size:12px;
+nav.active{
+    display:block;
 }
 
 .nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    flex-direction:column;
+    gap:15px;
+    padding:20px 0;
+    text-align:center;
 }
 
 .hero{
