@@ -31,39 +31,51 @@
     <div class="loader"></div>
     <h2>MIR Electronics</h2>
 </div>
-    <!-- Navigation -->
+    <!-- Header (Flipkart-like) -->
 
-<!-- ==========================
-     Navigation Bar V2
-========================== -->
-
-<nav class="navbar">
-
+<header class="site-header">
+  <div class="header-top container">
     <a href="index.html" class="logo">
-
-    <img src="images/logo.png" alt="MIR Electronics Logo">
-
-    <div class="logo-text">
+      <img src="images/logo.png" alt="MIR Electronics Logo">
+      <div class="logo-text">
         <h2>MIR Electronics</h2>
         <span>Where Quality Meets Innovation</span>
+      </div>
+    </a>
+
+    <form class="search-form" action="products.html" role="search">
+      <select name="cat" class="search-cat" aria-label="Category">
+        <option value="">All</option>
+        <option>Lighting</option>
+        <option>Switches & Sockets</option>
+        <option>Wires</option>
+        <option>Fans</option>
+        <option>Water Heaters</option>
+        <option>Home Appliances</option>
+      </select>
+      <input type="search" name="q" placeholder="Search for products, brands and more" aria-label="Search" />
+      <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+    </form>
+
+    <div class="header-actions">
+      <a href="login.html" class="action-link"><i class="fas fa-user"></i><span>Sign In</span></a>
+      <a href="cart.html" class="action-link cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
     </div>
 
-</a>
-<button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
-    ☰
-</button>
-    <ul class="nav-links" id="primary-navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  </div>
 
-        <li><a href="index.html" class="active">Home</a></li>
-
-        <li><a href="products.html">Products</a></li>
-
-        <li><a href="about.html">About</a></li>
-
-        <li><a href="contact.html">Contact</a></li>
-
+  <nav class="main-nav container" id="primary-navigation" aria-label="Primary">
+    <ul>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">New Arrivals</a></li>
+      <li><a href="#">Offers</a></li>
+      <li><a href="#">Support</a></li>
     </ul>
-</nav>
+  </nav>
+</header>
+
     <!-- Hero -->
  <header class="hero">
 
@@ -188,71 +200,61 @@
         Discover our most popular electrical products and home appliances.
     </p>
 
-    <div class="featured-grid">
+    <!-- Product carousel like Amazon -->
+    <div class="product-carousel container">
+      <button class="carousel-prev" aria-label="Previous">‹</button>
+      <div class="carousel-viewport">
+        <div class="carousel-track">
 
-        <div class="featured-card">
-
+          <div class="featured-card">
             <span class="product-badge">Best Seller</span>
-
             <img src="images/wire.jpg" alt="Electrical Wires">
-
             <h3>Electrical Wires</h3>
-
-            <div class="price-row">
-              <div class="price">₹1,299 <span class="old">₹1,799</span></div>
-              <div class="rating">⭐⭐⭐⭐☆</div>
-            </div>
-
+            <div class="price-row"><div class="price">₹1,299 <span class="old">₹1,799</span></div><div class="rating">⭐⭐⭐⭐☆</div></div>
             <p>Premium quality copper wires for homes and commercial buildings.</p>
+            <a href="products.html" class="product-btn">View Products</a>
+          </div>
 
-            <a href="products.html" class="product-btn">
-                View Products
-            </a>
-
-        </div>
-
-        <div class="featured-card">
-
+          <div class="featured-card">
             <span class="product-badge">Popular</span>
-
             <img src="images/switch.jpg" alt="Switches">
-
             <h3>Switches & Sockets</h3>
-
-            <div class="price-row">
-              <div class="price">₹899 <span class="old">₹1,099</span></div>
-              <div class="rating">⭐⭐⭐⭐☆</div>
-            </div>
-
+            <div class="price-row"><div class="price">₹899 <span class="old">₹1,099</span></div><div class="rating">⭐⭐⭐⭐☆</div></div>
             <p>Elegant modular switches with superior safety and durability.</p>
+            <a href="products.html" class="product-btn">View Products</a>
+          </div>
 
-            <a href="products.html" class="product-btn">
-                View Products
-            </a>
-
-        </div>
-
-        <div class="featured-card">
-
+          <div class="featured-card">
             <span class="product-badge">New</span>
-
             <img src="images/fan.jpg" alt="Ceiling Fans">
-
             <h3>Ceiling Fans</h3>
-
-            <div class="price-row">
-              <div class="price">₹2,499 <span class="old">₹2,999</span></div>
-              <div class="rating">⭐⭐⭐⭐⭐</div>
-            </div>
-
+            <div class="price-row"><div class="price">₹2,499 <span class="old">₹2,999</span></div><div class="rating">⭐⭐⭐⭐⭐</div></div>
             <p>Energy-efficient ceiling fans designed for modern homes.</p>
+            <a href="products.html" class="product-btn">View Products</a>
+          </div>
 
-            <a href="products.html" class="product-btn">
-                View Products
-            </a>
+          <!-- duplicate some cards to allow horizontal scroll demo -->
+          <div class="featured-card">
+            <span class="product-badge">Hot</span>
+            <img src="images/wire.jpg" alt="Electrical Wires">
+            <h3>Premium Cable</h3>
+            <div class="price-row"><div class="price">₹1,499</div><div class="rating">⭐⭐⭐⭐☆</div></div>
+            <p>Durable insulated cable for home projects.</p>
+            <a href="products.html" class="product-btn">View Products</a>
+          </div>
+
+          <div class="featured-card">
+            <span class="product-badge">Hot</span>
+            <img src="images/switch.jpg" alt="Switches">
+            <h3>Smart Switch</h3>
+            <div class="price-row"><div class="price">₹1,199</div><div class="rating">⭐⭐⭐⭐☆</div></div>
+            <p>WiFi enabled smart switch for modern homes.</p>
+            <a href="products.html" class="product-btn">View Products</a>
+          </div>
 
         </div>
-
+      </div>
+      <button class="carousel-next" aria-label="Next">›</button>
     </div>
 
 </section>
