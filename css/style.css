@@ -81,7 +81,12 @@ ul{
     color:#777;
     font-size:13px;
 }
-
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#0B2545;
+    cursor:pointer;
+}
 .nav-links{
     display:flex;
     align-items:center;
