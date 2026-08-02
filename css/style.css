@@ -573,30 +573,25 @@ section{
 
 }
 
-@media(max-width:768px){
-
 .menu-toggle{
     display:block;
 }
 
 .navbar{
-    position:relative;
-}
-
-nav{
-    display:none;
-    width:100%;
-}
-
-nav.active{
-    display:block;
+    flex-wrap:wrap;
 }
 
 .nav-links{
+    display:none;
     flex-direction:column;
+    width:100%;
+    text-align:center;
     gap:15px;
     padding:20px 0;
-    text-align:center;
+}
+
+.nav-links.active{
+    display:flex;
 }
 
 .hero{
