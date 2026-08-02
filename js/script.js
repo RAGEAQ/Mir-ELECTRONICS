@@ -161,3 +161,19 @@ observer.observe(item);
 ========================================== */
 
 console.log("MIR Electronics Website Loaded Successfully");
+/* ==========================================
+   Mobile Menu
+========================================== */
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
